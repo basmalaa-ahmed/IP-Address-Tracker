@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>IP Address Tracker</title>
+</head>
+<body>
+    <section>
+        <div class="container mt-5">
+            <div class="title text-center m-auto text-light" >
+                <h1>IP Address Tracker</h1>
+            </div>
+            <div class="search mb-5">
+                <input id="input" class="form-control w-50 d-block m-auto" type="text" placeholder="search for any IP address or Domain">
+                <button   onclick="getData()" class="btn"><i class="fa-solid fa-chevron-right"></i></button>  
+            </div>
+            
+        </div>
+    </section>
+    <section class="data-section text-center">
+        <article>
+          <h2>IP Address</h2>
+          <p class="ipAddressField"></p>
+        </article>
+        <article>
+          <h2>Location</h2>
+          <p class="locationInput"></p>
+        </article>
+        <article>
+          <h2>Timezone</h2>
+          <p class="timezoneInput"></p>
+        </article>
+        <article>
+          <h2>ISP</h2>
+          <p class="ispInput"></p>
+        </article>
+      </section>
+    <section class="map-section">
+        <div id="map"></div>
+      </section>    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="js/index.js"></script>
+</body>
+</html>
